@@ -22,7 +22,7 @@ public class EmployeeDao {
 
 		// Step 1. Loading the JDBC Driver
 		try {
-			InputStream is = this.getClass().getClassLoader().getResourceAsStream("dev-db.properties");
+			InputStream is = this.getClass().getClassLoader().getResourceAsStream("prod-db.properties");
 
 			Properties dbProps = new Properties();
 			dbProps.load(is);
